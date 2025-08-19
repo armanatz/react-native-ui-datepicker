@@ -3,6 +3,9 @@ import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { useCalendarContext } from '../../calendar-context';
 import { formatNumber, getDateYear, getYearRange } from '../../utils';
 import dayjs from 'dayjs';
+import calendar from 'dayjs/plugin/calendar';
+
+dayjs.extend(calendar);
 
 const YearButton = () => {
   const {
