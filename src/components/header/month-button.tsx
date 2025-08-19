@@ -3,6 +3,9 @@ import dayjs from 'dayjs';
 import { Pressable, Text, View } from 'react-native';
 import { useCalendarContext } from '../../calendar-context';
 import { isValidJalaliLocale } from '../../utils';
+import calendar from 'dayjs/plugin/calendar';
+
+dayjs.extend(calendar);
 
 const MonthButton = () => {
   const {
